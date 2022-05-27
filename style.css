@@ -4,7 +4,7 @@
     padding: 0px;
     list-style:none;
 }
-body {
+.body {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -35,10 +35,10 @@ body {
 .new-task {
     display: flex;
 }
-input,button{
+.input,.button{
     outline:none;
 }
-button {
+.button {
     background: none;
     border: 0px;
     color: #888;
@@ -47,11 +47,11 @@ button {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-button:hover {
+.button:hover {
     color: #3a3a3a;
 }
 /* Heading */
-h3 {
+.heading {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -61,9 +61,9 @@ h3 {
     text-transform: uppercase;
 }
 .heading_mb20 {
-    margin-bottom: 20px;
-  }
-input[type="text"] {
+margin-bottom: 20px;
+}
+.input {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -75,18 +75,18 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+.input:focus {
     color: #333;
 }
 
 /* New Task */
 
-input#new-task {
+#new-task {
     width: 318px;
 }
 
 /* Task list */
-li {
+.tasks__item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -95,20 +95,20 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-li > * {
+.tasks__item > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.tasks__item > .tasks__checkbox {
     margin: 0 10px;
 }
-li > label {
+.tasks__item > .tasks__lable {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+.tasks__item > .input {
     width: 226px
 }
 .button .button__img {
@@ -121,21 +121,21 @@ li >    input[type="text"] {
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks .tasks__lable {
     text-decoration: line-through
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.tasks__item .input {
     display:none
 }
 
-ul li.edit-mode input[type=text] {
+.tasks__item_edit .input {
     display:inline-block;
     width:224px
 }
 
-ul li.edit-mode label {
+.tasks__item_edit .tasks__lable {
     display:none;
 }
