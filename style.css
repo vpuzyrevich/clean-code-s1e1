@@ -83,7 +83,7 @@
 }
 
 /* New Task */
-#new-task {
+.new-task .input {
   width: 318px;
 }
 
